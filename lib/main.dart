@@ -1,4 +1,6 @@
 import 'package:cardapio/screens/categoriesScreen.dart';
+import 'package:cardapio/screens/dishPerCategoryScreen.dart';
+import 'package:cardapio/utils/appRoutes.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -10,6 +12,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      initialRoute: '/',
+      routes: {
+        AppRoutes.HOME: (context) => CategoriesScreen(),
+        AppRoutes.DISH_CARTEGORIES: (context) => DishPerCategoryScreen(),
+      },
       title: 'Cardapio',
       theme: ThemeData(
           colorScheme: ColorScheme.fromSwatch(
@@ -42,7 +49,6 @@ class MyApp extends StatelessWidget {
                   color: Colors.white,
                 ),
               )),
-      home: CategoriesScreen(),
     );
   }
 }

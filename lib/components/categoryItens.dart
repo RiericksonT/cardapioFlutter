@@ -1,5 +1,4 @@
-import 'package:cardapio/screens/dishPerCategoryScreen.dart';
-import 'package:flutter/foundation.dart';
+import 'package:cardapio/utils/appRoutes.dart';
 import 'package:flutter/material.dart';
 
 class categoryItem extends StatelessWidget {
@@ -9,9 +8,10 @@ class categoryItem extends StatelessWidget {
   const categoryItem(this.title, this.color);
 
   void _selectCategory(BuildContext context, String category) {
-    Navigator.of(context).push(MaterialPageRoute(builder: (_) {
-      return DishPerCategoryScreen(category: category);
-    }));
+    Navigator.of(context).pushNamed(
+      AppRoutes.DISH_CARTEGORIES,
+      arguments: category,
+    );
   }
 
   @override
