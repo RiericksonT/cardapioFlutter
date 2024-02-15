@@ -1,4 +1,5 @@
 import 'package:cardapio/screens/categoriesScreen.dart';
+import 'package:cardapio/screens/dishDetailsScreen.dart';
 import 'package:cardapio/screens/dishPerCategoryScreen.dart';
 import 'package:cardapio/utils/appRoutes.dart';
 import 'package:flutter/material.dart';
@@ -16,6 +17,7 @@ class MyApp extends StatelessWidget {
       routes: {
         AppRoutes.HOME: (context) => CategoriesScreen(),
         AppRoutes.DISH_CARTEGORIES: (context) => DishPerCategoryScreen(),
+        AppRoutes.DISH_DETAIL: (context) => DishDetailsScreen(),
       },
       title: 'Cardapio',
       theme: ThemeData(
@@ -48,6 +50,17 @@ class MyApp extends StatelessWidget {
                   fontWeight: FontWeight.w700,
                   color: Colors.white,
                 ),
+                displayMedium: const TextStyle(
+                  fontSize: 30,
+                  fontFamily: 'AmaticSC',
+                  fontWeight: FontWeight.w600,
+                  color: Colors.black,
+                ),
+                displayLarge: const TextStyle(
+                    fontSize: 40,
+                    fontFamily: 'AmaticSC',
+                    fontWeight: FontWeight.w700,
+                    color: Colors.yellow),
               )),
     );
   }

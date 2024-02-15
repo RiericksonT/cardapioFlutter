@@ -1,38 +1,33 @@
+import 'package:cardapio/model/dishes.dart';
+import 'package:cardapio/utils/appRoutes.dart';
 import 'package:flutter/material.dart';
 
 class DishesItens extends StatelessWidget {
-  final String name;
-  final String description;
-  final String price;
-  final String image;
+  final Dish dish;
 
-  const DishesItens(
-      {required this.name,
-      required this.description,
-      required this.price,
-      required this.image});
+  const DishesItens(this.dish);
 
-  void _selectDish(BuildContext context, String dish) {
-    // Navigator.of(context).pushNamed(
-    //   AppRoutes.DISH_CARTEGORIES,
-    //   arguments: category,
-    // );
+  void _selectDish(BuildContext context, Dish dish) {
+    Navigator.of(context).pushNamed(
+      AppRoutes.DISH_DETAIL,
+      arguments: dish,
+    );
   }
 
   @override
   Widget build(BuildContext context) {
     return InkWell(
-      onTap: () => _selectDish(context, name),
+      onTap: () => _selectDish(context, dish),
       child: Card(
         color: Theme.of(context).colorScheme.secondary,
         elevation: 5,
         child: ListTile(
           leading: CircleAvatar(
-            backgroundImage: NetworkImage(image),
+            backgroundImage: NetworkImage(dish.image),
           ),
-          title: Text(name),
-          subtitle: Text(description),
-          trailing: Text(price),
+          title: Text(dish.name),
+          subtitle: Text(dish.description),
+          trailing: Text(dish.price),
         ),
       ),
     );
