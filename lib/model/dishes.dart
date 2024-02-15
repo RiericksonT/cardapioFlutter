@@ -5,6 +5,7 @@ class Dish {
   final String description;
   final String price;
   final String image;
+  final bool isChefIndication;
   final Category categoryEnum;
 
   const Dish({
@@ -13,5 +14,6 @@ class Dish {
     required this.price,
     required this.image,
     required this.categoryEnum,
+    required this.isChefIndication,
   });
 }

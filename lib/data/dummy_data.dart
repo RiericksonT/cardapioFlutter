@@ -7,6 +7,7 @@ class DUMMY_DATA {
       'image':
           'https://xvcuritiba.com.br/wp-content/uploads/2022/05/Burger-Parrillero-do-Refugio-Patagonia-Cred-Carolina-Costa.jpg',
       'categoryEnum': 'snacks',
+      'isChefIndication': true,
     },
     {
       'name': 'Pasta',
@@ -15,6 +16,7 @@ class DUMMY_DATA {
       'image':
           'https://joanne-eatswellwithothers.com/wp-content/uploads/2020/06/Pasta-with-Tomato-Basil-Cream-Sauce.jpg',
       'categoryEnum': 'lunch',
+      'isChefIndication': true,
     },
     {
       'name': 'Pizza',
@@ -23,6 +25,7 @@ class DUMMY_DATA {
       'image':
           'https://www.cnnbrasil.com.br/wp-content/uploads/sites/12/2021/08/44772_748DFD89F9513B65.jpg',
       'categoryEnum': 'dinner',
+      'isChefIndication': false,
     },
     {
       'name': 'Cappuccino',
@@ -31,6 +34,7 @@ class DUMMY_DATA {
       'image':
           'https://www.nespresso.com/ncp/res/uploads/recipes/nespresso-recipes-CAPPUCCINO-BANANA-SESAME-SEEDS.jpg',
       'categoryEnum': 'drinks',
+      'isChefIndication': false,
     },
     {
       'name': 'Salad',
@@ -39,6 +43,7 @@ class DUMMY_DATA {
       'image':
           'https://static.itdg.com.br/images/640-400/d8fa256da2431f35d207c3489e11973c/346244-original.jpg',
       'categoryEnum': 'vegetarian',
+      'isChefIndication': false,
     },
     {
       'name': 'Pancakes',
@@ -47,6 +52,7 @@ class DUMMY_DATA {
       'image':
           'https://uploads.metropoles.com/wp-content/uploads/2020/08/30103330/panqueca-americana-com-frutas-vermelhas.jpg',
       'categoryEnum': 'breakfast',
+      'isChefIndication': false,
     },
   ];
 }

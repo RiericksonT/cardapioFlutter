@@ -27,6 +27,7 @@ class DishPerCategoryScreen extends StatelessWidget {
             description: dishsCategory[index]['description'],
             price: dishsCategory[index]['price'],
             image: dishsCategory[index]['image'],
+            isChefIndication: dishsCategory[index]['isChefIndication'],
             categoryEnum: Category.values.firstWhere(
               (e) =>
                   e.toString().split('.').last ==
